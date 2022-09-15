@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+
+header {
+    height: calc(120px + 32px);
+}
+
+header div img {
+    margin: auto;
+    border-radius: 50%;
+    height: 120px;
+}
+
+header div {
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    width: 124px;
+    height: 124px;
+    margin-top: 38px;
+    transition: transform .3s;
+}
+
+header div:hover {
+    transform: scale(1.1)
+}
+
+/* TIRANDO OS PONTOS NATURAIS DA UL */
+ul   {
+    list-style: none;
+}
+
+/* IMAGEM DE FUNDO */
+body {
+    background-image: url(./img/bg.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
+
+/* FONTE DO SITE */
+body * {
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+/* CONTEÚDO PRINCIPAL (SECT1, SEC2, SEC3)*/
+main {
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+
+    display: grid;
+    gap: 24px;
+
+    margin-top: 32px;
+}
+
+/* BORDDA DE CIMA DAS SECTIONS E CORES DAS LETRAS */
+section {
+    color: white;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+}
+
+/* FUNDO CINZA DE CADA DIV */
+section div {
+    background-color: #2A2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+
+/* ESPACÇOS DAS LETRAS DE H2 E P */
+section h2 {
+    letter-spacing: -0.47px;
+}
+
+section p {
+    letter-spacing: -0.18px;
+    color: #A1A1AA;
+}
+
+/* DEIXANDO A UL NA SEQUENCIA DE LADO */
+section ul {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+
+section ul li {
+    transition: transform .3s;
+}
+
+section ul li:hover {
+    transform:  scale(1.1);
+}
+
+/* TAMANHOS DAS IMGS */ 
+.games-list img {
+    width: 90px;
+    border-radius: 8px;
+    border: 1px solid #443E54;
+
+}
+
+.channel-list img {
+    border-radius: 28%;
+    width: 70px;
+    border: 1px solid #443E54;
+}
+
+.champions-img img {
+    height: 128px;
+    width: 98px;
+}
+
+.nba-img img {
+    width: 98px;
+    height: 128px;
+}
+
+.lol-img img {
+    width: 96.85px;
+}
+
+.valorant-img img {
+    width: 96.85px;
+}
+
+/* ANIMATION */
+
+header div {
+    animation: fromTop .7s .2s backwards;
+}
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+section:nth-child(2) {
+    animation: fromRight .7s backwards;
+}
+
+@keyframes fromRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+section:nth-child(3) {
+    animation: fromBottom .7s backwards;
+} 
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section:nth-child(1) {
+    animation: fromLeft .7s backwards;
+} 
