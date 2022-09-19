@@ -19,4 +19,5 @@ Projeto construído  do evento Next Level Week da Rocketseat.
 
 ## 👤 Contato
 
-- dlplima4@gmail.com
+- G-mail: dlplima4@gmail.com
+- Linkedin: https://www.linkedin.com/in/davi-lima-pereira-4007a4208/
